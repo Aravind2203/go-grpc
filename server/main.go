@@ -47,7 +47,7 @@ func (s *helloServer) SaystreamHello(stream pb.GreetService_SaystreamHelloServer
 		}
 		fmt.Println("The message Recived from Client:", message.Name)
 		stream.Send(&pb.HelloResponse{
-			Name: "Aravind likes ramya",
+			Name: "Aravind ",
 		})
 	}
 

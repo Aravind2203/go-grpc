@@ -53,7 +53,7 @@ func clientSendStream(client pb.GreetServiceClient) {
 	stream, _ := client.SaystreamHello(context.Background())
 	for i := 0; i < 5; i++ {
 		stream.Send(&pb.HelloRequest{
-			Name: "My baby Ramya",
+			Name: "Hello",
 		})
 		message, err := stream.Recv()
 		if err == io.EOF {
